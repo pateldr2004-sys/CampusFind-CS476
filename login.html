@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | CampusFind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets_styles.css"> 
+</head>
+<body>
+    <header class="site-header">
+    <div class="identity-wrap">
+      <div class="official-brand">
+        <img src="https://www.uregina.ca/communications-marketing/assets/visual-identity/Primary_Logo/Full%20Colour/primary-logo-680x270.jpg"
+             alt="University of Regina logo" class="uofr-logo" />
+      </div>
+      <div class="campusfind-brand" aria-label="CampusFind logo">
+        <div class="campusfind-icon" aria-hidden="true">
+          <svg viewBox="0 0 72 72" role="img" aria-label="CampusFind logo mark">
+            <defs>
+              <linearGradient id="cfGrad" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#1d5f49"/>
+                <stop offset="100%" stop-color="#2f7c62"/>
+              </linearGradient>
+            </defs>
+            <rect x="8" y="8" width="56" height="56" rx="18" fill="url(#cfGrad)"/>
+            <path d="M31 22c-8.3 0-15 6.7-15 15s6.7 15 15 15c3.7 0 7-1.3 9.7-3.6l8.5 8.4 4.2-4.2-8.4-8.5A14.9 14.9 0 0 0 46 37c0-8.3-6.7-15-15-15Zm0 6c5 0 9 4 9 9s-4 9-9 9-9-4-9-9 4-9 9-9Z" fill="#ffffff"/>
+            <path d="M31 31.5h7.5v3H34v4.5h-3v-7.5Z" fill="#efc75e"/>
+          </svg>
+        </div>
+        <div>
+          <h1>CampusFind</h1>
+          <p class="brand-subtitle">A safer lost and found experience for the University of Regina community</p>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="header-actions">
+      <a href="admin-login.html" class="admin-link">Admin Login</a>
+      <div class="contact-pill">Protective Services: 306-585-4407</div>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+ 
+  <main id="main-content">
+    <section class="shell auth-shell">
+      <div class="card section-card auth-card narrow-card">
+        <p class="eyebrow">User login</p>
+        <h2>Log in to report a lost item</h2>
+        <p>Use your account to submit a lost-item report and check your claim progress.</p>
+        <p class="auth-flow-note">To report a lost item, please log in first. If you do not have an account, <a href="signup.html">sign up here</a>.</p>
+ 
+        <form class="form-grid auth-panel single-panel">
+          <label>
+            <span>Email</span>
+            <input type="email" placeholder="name@example.com" />
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" placeholder="Enter your password" />
+          </label>
+          <a href="report.html" class="btn btn-primary full">Log in</a>
+          <p class="switch-auth">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="site-footer shell">
+    <div class="footer-brand">
+      <img src="https://www.uregina.ca/protective-services/assets/images/promo-logo_site-use.png"
+           alt="Protective Services logo" class="ps-logo" />
+      <div>
+        <h3>CampusFind</h3>
+        <p>Protective Services</p>
+        <p>306-585-4407 · 306-585-4999</p>
+        <p>Research and Innovation Centre, Room 120</p>
+      </div>
+    </div>
+    <div class="footer-contact">
+      <p>Designed as a safer lost-and-found workflow concept for the UofR community.</p>
+    </div>
+  </footer>
+ 
+  <script src="assets_script.js" defer></script>
+</body>
+</html>
+ 
+</body>
