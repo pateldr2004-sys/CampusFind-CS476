@@ -58,10 +58,13 @@
           <label>
             <span>Email</span>
             <input type="email" placeholder="name@example.com" />
+            <span class="error-message hidden" id="error-text-email">Please enter a valid email address</span>
           </label>
           <label>
             <span>Password</span>
             <input type="password" placeholder="Enter your password" />
+            <span class="error-message hidden" id="error-text-password">Password is required</span>
+
           </label>
           <a href="report.html" class="btn btn-primary full">Log in</a>
           <p class="switch-auth">Don't have an account? <a href="signup.html">Sign up</a></p>
@@ -87,6 +90,7 @@
   </footer>
  
   <script src="assets_script.js" defer></script>
+  <script src="eventHandler.js" defer></script>
 </body>
 </html>
  
