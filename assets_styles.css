@@ -633,3 +633,19 @@ a:focus {
     flex-direction: column;
   }
 }
+
+.error-highlight {
+  border-color: #a63a53 !important; /* maroon */
+  box-shadow: 0 0 0 3px rgba(166, 58, 83, 0.1) !important;
+}
+
+.error-message {
+  color: #a63a53;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
