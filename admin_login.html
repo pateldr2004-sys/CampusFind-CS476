@@ -53,10 +53,12 @@
         <p>Only authorized staff should sign in here to enter found items, review matches, and approve releases.</p>
  
         <div class="admin-grid admin-top-grid">
-          <form id="admin-login" class="form-grid auth-panel admin-login-panel">
+          <form id="admin-login-form" class="form-grid auth-panel admin-login-panel">
             <h3>Admin login</h3>
             <label><span>Email</span><input type="email" placeholder="staff@uregina.ca" /></label>
+            <span class="error-message hidden" id="error-text-email">Please enter a valid email address</span>
             <label><span>Password</span><input type="password" placeholder="Enter your password" /></label>
+            <span class="error-message hidden" id="error-text-password">Password must be at least 8 characters</span>
             <a href="admin_dashboard.html" class="btn btn-secondary full">Admin log in</a>
             <div class="inline-note">Admin accounts should be created internally, not through public signup.</div>
           </form>
@@ -93,6 +95,7 @@
   </footer>
  
   <script src="assets_script.js" defer></script>
+  <script src="eventHandler.js" defer></script>
 </body>
 </html>
  

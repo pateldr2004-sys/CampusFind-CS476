@@ -51,16 +51,18 @@
       <div class="card section-card">
         <p class="eyebrow">Lost item report</p>
         <h2>Submit your report</h2>
-        <form class="form-grid" id="lost-report-form">
+        <form class="form-grid" id="report-form">
           <div class="field-grid two-col">
-            <label><span>Full name</span><input type="text" placeholder="Enter your full name" /></label>
-            <label><span>Email</span><input type="email" placeholder="name@example.com" /></label>
+            <span class="error-message hidden" id="error-text-name">Name must contain only letters and be at least 2 characters</span>
+            <label><span>Email</span><input type="email" id="email" placeholder="name@example.com" /></label>
+            <span class="error-message hidden" id="error-text-email">Please enter a valid email address</span>
           </div>
           <div class="field-grid two-col">
-            <label><span>Phone number</span><input type="tel" placeholder="306-000-0000" /></label>
+            <label><span>Phone number</span><input type="tel" id="phone" placeholder="306-000-0000" /></label>
+            <span class="error-message hidden" id="error-text-phone">Please enter a valid phone number</span>
             <label>
               <span>Item category</span>
-              <select>
+              <select id="category">
                 <option>Select a category</option>
                 <option>Phone</option>
                 <option>Laptop / electronic device</option>
@@ -71,21 +73,26 @@
                 <option>Jewelry</option>
                 <option>Other</option>
               </select>
+              <span class="error-message hidden" id="error-text-category">Please select a category</span>
             </label>
           </div>
           <div class="field-grid two-col">
-            <label><span>Item name</span><input type="text" placeholder="e.g., Black iPhone 14" /></label>
-            <label><span>Date lost</span><input type="date" /></label>
+            <label><span>Item name</span><input type="text" id="item" placeholder="e.g., Black iPhone 14" /></label>
+            <span class="error-message hidden" id="error-text-item">Item name is required</span>
+            <label><span>Date lost</span><input type="date" id="date" /></label>
+            <span class="error-message hidden" id="error-text-date">Please select a valid date</span>
           </div>
-          <label><span>Last known location</span><input type="text" placeholder="Library, College West, Riddell Centre..." /></label>
+          <label><span>Last known location</span><input type="text" id="location" placeholder="Library, College West, Riddell Centre..." /></label>
+          <span class="error-message hidden" id="error-text-location">Location is required</span>
           <label>
             <span>Photo of the lost item (optional)</span>
-            <input type="file" accept=".jpg,.jpeg,.png,.webp" />
-          </label>
+            <input type="file" id="file" accept=".jpg,.jpeg,.png,.pdf" /></label>
+            <span class="error-message hidden" id="error-text-file">Please upload a valid image file (jpg, jpeg, png, pdf)</span>
           <p class="helper-text">If you have a picture of the item, upload it here to help Protective Services verify your report faster.</p>
           <label>
             <span>Description</span>
-            <textarea rows="5" placeholder="Add color, brand, case, marks, stickers, or anything that helps staff verify the item."></textarea>
+            <textarea rows="5" id="description" placeholder="Add color, brand, case, marks, stickers, or anything that helps staff verify the item."></textarea>
+            <span class="error-message hidden" id="error-text-description">Description is required</span>
           </label>
           <div class="inline-note">Protective Services may request extra identifying details before releasing an item.</div>
           <a href="claim_success.html" class="btn btn-primary full">Submit lost item report</a>
@@ -132,5 +139,6 @@
   </footer>
  
   <script src="assets_script.js" defer></script>
+  <script src="eventHandler.js" defer></script>
 </body>
 </html>
