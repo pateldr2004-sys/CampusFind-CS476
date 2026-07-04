@@ -54,16 +54,18 @@
         <p>Use your account to submit a lost-item report and check your claim progress.</p>
         <p class="auth-flow-note">To report a lost item, please log in first. If you do not have an account, <a href="signup.html">sign up here</a>.</p>
  
-        <form class="form-grid auth-panel single-panel">
+        <form class="form-grid auth-panel single-panel" id="login-form">
           <label>
             <span>Email</span>
-            <input type="email" placeholder="name@example.com" />
+            <input type="email" id="email" placeholder="name@example.com" />
+            <span class="error-message hidden" id="error-text-email">Email is invalid</span>
           </label>
           <label>
             <span>Password</span>
-            <input type="password" placeholder="Enter your password" />
+            <input type="password" id="password" placeholder="Enter your password" />
+            <span class="error-message hidden" id="error-text-password">Password is required</span>
           </label>
-          <a href="report.html" class="btn btn-primary full">Log in</a>
+          <button type="submit" class="btn btn-primary full"> Log in </button>
           <p class="switch-auth">Don't have an account? <a href="signup.html">Sign up</a></p>
         </form>
       </div>
@@ -87,6 +89,7 @@
   </footer>
  
   <script src="assets_script.js" defer></script>
+  <script src="eventHandler.js" defer></script>
 </body>
 </html>
  
