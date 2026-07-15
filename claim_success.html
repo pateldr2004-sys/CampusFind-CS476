@@ -39,7 +39,7 @@
     </div>
  
     <div class="header-actions">
-      <a href="admin-login.html" class="admin-link">Admin Login</a>
+      <a href="admin_login.html" class="admin-link">Admin Login</a>
       <div class="contact-pill">Protective Services: 306-585-4407</div>
       <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
         <span aria-hidden="true">◐</span>
@@ -57,7 +57,7 @@
         <p>Protective Services can now review your report and compare it with found items turned in to the office.</p>
  
         <div class="success-reference">
-          <strong>Reference number:</strong> CF-2026-0142
+          <strong>Reference number:</strong> <span id="success-reference-number">CF-2026-0142</span>
           <p class="helper-text">Save this number so you can check your claim status later.</p>
         </div>
  
@@ -108,5 +108,6 @@
   </footer>
  
   <script src="assets_script.js" defer></script>
+  <script src="frontend_api.js" defer></script>
 </body>
 </html>
