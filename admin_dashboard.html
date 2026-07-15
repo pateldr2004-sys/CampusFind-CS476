@@ -80,10 +80,10 @@
             <div class="dashboard-panels">
               <div class="panel">
                 <h3>Add found item</h3>
-                <form class="form-grid small-form">
-                  <label><span>Item title</span><input type="text" placeholder="Blue backpack" /></label>
+                <form class="form-grid small-form" id="found-item-form">
+                  <label><span>Item title</span><input type="text" id="found-item-title" placeholder="Blue backpack" /></label>
                   <div class="field-grid two-col">
-                    <label><span>Drop-off location</span><input type="text" placeholder="Research and Innovation Centre" /></label>
+                    <label><span>Drop-off location</span><input type="text" id="found-dropoff-location" placeholder="Research and Innovation Centre" /></label>
                     <label>
                       <span>Item category</span>
                       <select>
@@ -135,6 +135,7 @@
   </footer>
  
   <script src="assets_script.js" defer></script>
+  <script src="frontend_api.js" defer></script>
 </body>
 </html>
  

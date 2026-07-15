@@ -38,7 +38,7 @@
     </div>
  
     <div class="header-actions">
-      <a href="admin-login.html" class="admin-link">Admin Login</a>
+      <a href="admin_login.html" class="admin-link">Admin Login</a>
       <div class="contact-pill">Protective Services: 306-585-4407</div>
       <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
         <span aria-hidden="true">◐</span>
@@ -95,7 +95,7 @@
             <span class="error-message hidden" id="error-text-description">Description is required</span>
           </label>
           <div class="inline-note">Protective Services may request extra identifying details before releasing an item.</div>
-          <a href="claim_success.html" class="btn btn-primary full">Submit lost item report</a>
+          <button type="submit" class="btn btn-primary full">Submit lost item report</button>
         </form>
       </div>
  
@@ -106,7 +106,8 @@
           <div class="form-grid">
             <label><span>Reference number</span><input type="text" placeholder="e.g., CF-2026-0142" /></label>
             <label><span>Email</span><input type="email" placeholder="name@example.com" /></label>
-            <button type="button" class="btn btn-secondary full">Check status</button>
+            <button type="submit" class="btn btn-secondary full">Check status</button>
+            <p class="helper-text" id="status-result"></p>
           </div>
         </div>
  
@@ -140,5 +141,6 @@
  
   <script src="assets_script.js" defer></script>
   <script src="eventHandler.js" defer></script>
+  <script src="frontend_api.js" defer></script>
 </body>
 </html>
